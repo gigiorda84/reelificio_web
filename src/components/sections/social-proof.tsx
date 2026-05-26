@@ -5,9 +5,9 @@ export async function SocialProof() {
   const t = await getTranslations('socialProof');
 
   const metrics = [
-    {value: '1.000+', label: t('metrics.videos')},
+    {value: '100+', label: t('metrics.videos')},
     {value: '3', label: t('metrics.communities')},
-    {value: '+500k', label: t('metrics.growth')}
+    {value: '+1M', label: t('metrics.growth')}
   ];
 
   return (

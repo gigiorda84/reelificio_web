@@ -3,7 +3,7 @@
     "siteName": "reelificio",
     "tagline": "l'agenzia che fa scalare i brand su Instagram",
     "homeTitle": "reelificio — community che crescono, brand che scalano",
-    "homeDescription": "Costruiamo community su Instagram per i brand. Algoritmi che scoprono i trend, persone che sanno raccontarli. Oltre 1.000 reel al mese."
+    "homeDescription": "Costruiamo community su Instagram per i brand. Algoritmi che scoprono i trend, persone che sanno raccontarli. Oltre 100 reel al mese, +1M follower aggiunti nell'ultimo anno."
   },
   "nav": {
     "partnership": "Partnership",
@@ -12,13 +12,13 @@
     "cta": "Prenota una call"
   },
   "hero": {
-    "eyebrow": "1.000+ reel al mese · 3 community oltre i 100k",
+    "eyebrow": "100+ reel al mese · 3 community oltre i 100k · +1M follower",
     "title": "Trasformiamo il tuo brand in una community.",
     "subtitle": "Con script che convertono, voci che restano e personaggi che la gente vuole rivedere. Una scienza, non un colpo di fortuna.",
     "cta": "Prenota una call gratuita",
     "ctaSecondary": "Vedi come lavoriamo",
     "chipLeft": "Follower e ROAS",
-    "chipTop": "1.000 video al mese",
+    "chipTop": "100 video al mese",
     "chipRight": "Produzione video"
   },
   "socialProof": {
@@ -88,7 +88,7 @@
       },
       "cadence": {
         "title": "Cadenza mensile",
-        "body": "25+ script per pagina ogni mese, un buffer di reel sempre pronto. La produzione non si ferma."
+        "body": "20+ script per pagina ogni mese, un buffer di reel sempre pronto. La produzione non si ferma."
       },
       "data": {
         "title": "Feedback dai dati",
@@ -142,7 +142,7 @@
       },
       "talent": {
         "q": "Chi mette la faccia nei video? Fornite voi i talent?",
-        "a": "Nella maggior parte dei casi sì. Costruiamo personaggi proprietari (animati o reali) che diventano il volto del brand. Se preferisci usare un talent tuo, lo integriamo nel format."
+        "a": "Lavoriamo solo con personaggi animati: niente talent reali, niente facce di persone. Costruiamo da zero il personaggio che diventa il volto del brand. Se hai già un personaggio tuo, lo animiamo noi e lo facciamo entrare nel format."
       },
       "ads": {
         "q": "Vi occupate di contenuti organici e advertising?",
@@ -220,14 +220,14 @@
           "Discovery: chi è il tuo cliente, qual è il tuo tono, dove vuoi arrivare.",
           "Sviluppo personaggio: design, voce, mondo, archetipo.",
           "Lancio: 4 settimane di produzione intensiva per partire forte.",
-          "Cadenza mensile: ~25 reel/mese, analisi, iterazione."
+          "Cadenza mensile: ~20 reel/mese, analisi, iterazione."
         ]
       },
       "deliverables": {
         "title": "Cosa ricevi",
         "items": [
           "Brand identity del personaggio (visual + voice + tono)",
-          "~25 reel verticali al mese, pubblicati per te",
+          "~20 reel verticali al mese, pubblicati per te",
           "Calendario editoriale e gestione community",
           "Report mensile e roadmap del trimestre successivo"
         ]

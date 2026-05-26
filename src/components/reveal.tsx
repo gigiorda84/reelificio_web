@@ -1,41 +1,54 @@
 'use client';
 
-import {motion, useReducedMotion, type Variants} from 'motion/react';
-import {type ReactNode} from 'react';
-
-const variants: Variants = {
-  hidden: {opacity: 0, y: 16},
-  show: {opacity: 1, y: 0, transition: {duration: 0.5, ease: 'easeOut'}}
-};
+import {useEffect, useRef, useState, type ReactNode} from 'react';
+import {cn} from '@/lib/cn';
 
 export function Reveal({
   children,
   delay = 0,
-  as: Tag = 'div',
   className
 }: {
   children: ReactNode;
   delay?: number;
-  as?: keyof typeof motion;
   className?: string;
 }) {
-  const reduce = useReducedMotion();
-  const Comp = motion[Tag] as typeof motion.div;
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [shown, setShown] = useState(false);
 
-  if (reduce) {
-    return <Comp className={className}>{children}</Comp>;
-  }
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setShown(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            setShown(true);
+            io.disconnect();
+            break;
+          }
+        }
+      },
+      {threshold: 0.2}
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   return (
-    <Comp
-      className={className}
-      variants={variants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{once: true, amount: 0.2}}
-      transition={{delay}}
+    <div
+      ref={ref}
+      className={cn(
+        'transition-[opacity,transform] duration-500 ease-out will-change-[opacity,transform]',
+        shown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
+        className
+      )}
+      style={{transitionDelay: shown ? `${delay * 1000}ms` : '0ms'}}
     >
       {children}
-    </Comp>
+    </div>
   );
 }

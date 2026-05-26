@@ -3,7 +3,7 @@
     "siteName": "reelificio",
     "tagline": "the agency that scales brands on Instagram",
     "homeTitle": "reelificio — communities that grow, brands that scale",
-    "homeDescription": "We build Instagram communities for brands. Algorithms that find trends, people who know how to tell them. 1,000+ reels a month."
+    "homeDescription": "We build Instagram communities for brands. Algorithms that find trends, people who know how to tell them. 100+ reels a month, +1M followers added in the last year."
   },
   "nav": {
     "partnership": "Partnership",
@@ -12,13 +12,13 @@
     "cta": "Book a call"
   },
   "hero": {
-    "eyebrow": "1,000+ reels a month · 3 communities over 100k",
+    "eyebrow": "100+ reels a month · 3 communities over 100k · +1M followers",
     "title": "We turn your brand into a community.",
     "subtitle": "With scripts that convert, voices that stick, and characters people want to see again. A science, not a lucky shot.",
     "cta": "Book a free call",
     "ctaSecondary": "See how we work",
     "chipLeft": "Followers & ROAS",
-    "chipTop": "1,000 videos a month",
+    "chipTop": "100 videos a month",
     "chipRight": "Video production"
   },
   "socialProof": {
@@ -88,7 +88,7 @@
       },
       "cadence": {
         "title": "Monthly cadence",
-        "body": "25+ scripts per page every month. A buffer of reels always ready. Production never stalls."
+        "body": "20+ scripts per page every month. A buffer of reels always ready. Production never stalls."
       },
       "data": {
         "title": "Data feedback loop",
@@ -142,7 +142,7 @@
       },
       "talent": {
         "q": "Who's on camera? Do you provide talent?",
-        "a": "In most cases yes. We build proprietary characters (animated or real) that become the brand's face. If you prefer using your own talent, we integrate them into the format."
+        "a": "We only work with animated characters — no real talent, no human faces. We build the character from scratch and it becomes the brand's face. If you already have your own character, we animate it and bring it into the format."
       },
       "ads": {
         "q": "Do you handle organic content and paid advertising?",
@@ -220,14 +220,14 @@
           "Discovery: who your customer is, your tone, where you want to go.",
           "Character development: design, voice, world, archetype.",
           "Launch: 4 weeks of intensive production to start strong.",
-          "Monthly cadence: ~25 reels/month, analytics, iteration."
+          "Monthly cadence: ~20 reels/month, analytics, iteration."
         ]
       },
       "deliverables": {
         "title": "What you get",
         "items": [
           "Character brand identity (visual + voice + tone)",
-          "~25 vertical reels per month, published for you",
+          "~20 vertical reels per month, published for you",
           "Editorial calendar and community management",
           "Monthly report and roadmap for the next quarter"
         ]

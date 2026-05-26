@@ -83,7 +83,7 @@ export default async function OG({params}: {params: {locale: string}}) {
             textTransform: 'uppercase'
           }}
         >
-          <span>1.000+ reel / mese</span>
+          <span>100+ reel / mese</span>
           <span>3 community · 100k+</span>
           <span>{params.locale === 'it' ? 'parliamone →' : "let's talk →"}</span>
         </div>

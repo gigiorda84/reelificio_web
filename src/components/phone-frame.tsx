@@ -1,6 +1,6 @@
 'use client';
 
-import {motion, useReducedMotion} from 'motion/react';
+import {useEffect, useState} from 'react';
 import {cn} from '@/lib/cn';
 
 export function PhoneFrame({
@@ -12,15 +12,20 @@ export function PhoneFrame({
   poster?: string;
   className?: string;
 }) {
-  const reduce = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   return (
-    <motion.div
-      initial={reduce ? false : {opacity: 0, y: 20, rotate: -2}}
-      animate={{opacity: 1, y: 0, rotate: 3}}
-      transition={{type: 'spring', stiffness: 60, damping: 18}}
+    <div
       className={cn(
-        'relative aspect-[9/19.5] w-full max-w-[280px] md:max-w-[320px]',
+        'relative aspect-[9/19.5] w-full max-w-[280px] md:max-w-[320px] transition-all duration-700 ease-out',
+        mounted
+          ? 'opacity-100 translate-y-0 rotate-[3deg]'
+          : 'opacity-0 translate-y-5 -rotate-2',
         className
       )}
     >
@@ -43,7 +48,7 @@ export function PhoneFrame({
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
