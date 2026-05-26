@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "siteName": "reelificio",
+    "tagline": "the agency that scales brands on Instagram",
+    "homeTitle": "reelificio — communities that grow, brands that scale",
+    "homeDescription": "We build Instagram communities for brands. Algorithms that find trends, people who know how to tell them. 1,000+ reels a month."
+  },
+  "nav": {
+    "partnership": "Partnership",
+    "produzione": "Production",
+    "contatti": "Contact",
+    "cta": "Book a call"
+  },
+  "hero": {
+    "eyebrow": "1,000+ reels a month · 3 communities over 100k",
+    "title": "We turn your brand into a community.",
+    "subtitle": "With scripts that convert, voices that stick, and characters people want to see again. A science, not a lucky shot.",
+    "cta": "Book a free call",
+    "ctaSecondary": "See how we work",
+    "chipLeft": "Followers & ROAS",
+    "chipTop": "1,000 videos a month",
+    "chipRight": "Video production"
+  },
+  "socialProof": {
+    "title": "Brands and communities that share our videos",
+    "metrics": {
+      "videos": "videos produced every month",
+      "communities": "communities over 100k followers",
+      "growth": "followers added in the last year"
+    }
+  },
+  "twoPaths": {
+    "title": "Two ways to work with us.",
+    "subtitle": "Sponsor a community that already exists, or build your own. Either way, our studio works for your brand.",
+    "partnership": {
+      "label": "For brands",
+      "title": "Sponsor a community.",
+      "body": "Step inside our pages. Characters, voices and formats already loved by hundreds of thousands. Native integrations, not interruptions.",
+      "cta": "Explore partnerships"
+    },
+    "produzione": {
+      "label": "For builders",
+      "title": "Build your community.",
+      "body": "Custom animated characters, proprietary voice identity, editorial calendar, continuous production. Your brand becomes a format.",
+      "cta": "Explore production"
+    }
+  },
+  "howWeWork": {
+    "title": "The art and science of making video content that works.",
+    "subtitle": "Algorithms for trends. People for craft. Six phases that repeat every month, on every page.",
+    "steps": {
+      "trend": {
+        "title": "We find trends with AI",
+        "body": "We track formats, sounds and hooks while they're still rising — before they go mainstream."
+      },
+      "script": {
+        "title": "We write scripts that convert",
+        "body": "Hook, body, close, CTA. Testing logic baked into every batch."
+      },
+      "voice": {
+        "title": "We dub with proprietary voices",
+        "body": "One voice identity per page. Recognizable in two seconds."
+      },
+      "production": {
+        "title": "We animate and edit",
+        "body": "Proprietary characters, motion design, vertical edits tuned for the feed."
+      },
+      "distribution": {
+        "title": "We publish and distribute",
+        "body": "Calendar, copy, hashtags, cross-posting. No empty days."
+      },
+      "iterate": {
+        "title": "We analyze and iterate",
+        "body": "Every week we look at the numbers and change what needs changing. No faith — data."
+      }
+    }
+  },
+  "pillars": {
+    "title": "Why it works.",
+    "items": {
+      "characters": {
+        "title": "Proprietary characters",
+        "body": "We don't sell faces, we build IP. Characters last; people follow characters."
+      },
+      "voice": {
+        "title": "Voice identity",
+        "body": "Every community gets its own voice. Voice actors briefed specifically for each page."
+      },
+      "cadence": {
+        "title": "Monthly cadence",
+        "body": "25+ scripts per page every month. A buffer of reels always ready. Production never stalls."
+      },
+      "data": {
+        "title": "Data feedback loop",
+        "body": "What works gets scaled the following week. What doesn't gets retired."
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Communities we've built.",
+    "subtitle": "Three pages, three different tones, one same logic: characters people wait for.",
+    "cta": "View on Instagram",
+    "items": {
+      "fluffy": {
+        "name": "Fluffy Revolution",
+        "handle": "@fluffy.revolution",
+        "pitch": "Soft animations, content that sticks. A community for people who want smart lightness.",
+        "url": "https://www.instagram.com/fluffy.revolution/"
+      },
+      "hacker": {
+        "name": "Hacker Passivo Aggressivo",
+        "handle": "@hackerpassivoaggressivo",
+        "pitch": "Tech sarcasm, office life, the micro-aggressions of people who live in front of a screen. A character that laughs at you and with you.",
+        "url": "https://www.instagram.com/hackerpassivoaggressivo/"
+      },
+      "cipidilloo": {
+        "name": "Cipidilloo",
+        "handle": "@cipidilloo",
+        "pitch": "Voice, rhythm, a format that lands every week. A community waiting for the next episode.",
+        "url": "https://www.instagram.com/cipidilloo/"
+      }
+    }
+  },
+  "faq": {
+    "title": "F.A.Q.",
+    "items": {
+      "guarantee": {
+        "q": "How do you guarantee these results?",
+        "a": "We don't guarantee them in the magic sense. We produce them: every month we ship dozens of reels tested across variables (hook, voice, character, format). What works gets scaled. It's a process, not a lucky shot."
+      },
+      "cost": {
+        "q": "How much does it cost to work with you?",
+        "a": "It depends on the type of partnership. A sponsorship on one of our existing communities starts at a contained budget; building a new page requires a dedicated monthly investment. The fastest way to find out is a call — we'll tell you if it makes sense before we talk numbers."
+      },
+      "who": {
+        "q": "Who do you work with?",
+        "a": "Consumer brands that have something to say and want to say it the way people actually want to listen. Food, tech, lifestyle, finance, retail. We don't work with everyone: first we talk, then we decide together."
+      },
+      "why": {
+        "q": "Why should a brand invest in social content today?",
+        "a": "Because attention lives in feeds, not in shop windows. A community on Instagram is a direct channel to your customer — no intermediaries, no CPMs to renegotiate every month. It costs to build, and it's worth it."
+      },
+      "talent": {
+        "q": "Who's on camera? Do you provide talent?",
+        "a": "In most cases yes. We build proprietary characters (animated or real) that become the brand's face. If you prefer using your own talent, we integrate them into the format."
+      },
+      "ads": {
+        "q": "Do you handle organic content and paid advertising?",
+        "a": "Yes. The same content that performs organically becomes the creative base for ads. Same language, same character, lower cost per result."
+      }
+    }
+  },
+  "ctaBand": {
+    "title": "Let's talk.",
+    "subtitle": "A free 30-minute call. No upsell, no pitch you don't need.",
+    "calLabel": "Book directly",
+    "formLabel": "Or send us a brief",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "handle": "Instagram handle",
+      "message": "Tell us",
+      "submit": "Send brief",
+      "sending": "Sending…",
+      "successTitle": "Got it.",
+      "successBody": "We'll reply within 24 business hours.",
+      "errorTitle": "Something went wrong.",
+      "errorBody": "Try again or email hello@reelificio.com."
+    }
+  },
+  "footer": {
+    "tagline": "Building communities that scale.",
+    "company": "Sweet Life Faktory · Corso Dante Alighieri 118, 10126 Torino, Italy",
+    "vat": "VAT 11515270012",
+    "sdi": "SDI W7YVJK9",
+    "rights": "All rights reserved.",
+    "legal": {
+      "privacy": "Privacy",
+      "cookies": "Cookie Policy",
+      "notes": "Legal Notes"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok"
+    }
+  },
+  "partnership": {
+    "title": "Sponsor a community.",
+    "subtitle": "Our pages already have the audience. You have a product. We bring them together — natively, inside the format the audience loves.",
+    "sections": {
+      "how": {
+        "title": "How it works",
+        "items": [
+          "Brief together: who you are, what you sell, what you want.",
+          "We pick the right pages for your brand.",
+          "We write the reel as if it were one more episode of the community.",
+          "We publish, measure, hand you the data."
+        ]
+      },
+      "deliverables": {
+        "title": "What you get",
+        "items": [
+          "1+ sponsored reel on one or more communities",
+          "Usage rights for your own channels",
+          "Report with views, saves, shares, clicks",
+          "Optional scaling with paid ads on lookalikes"
+        ]
+      }
+    },
+    "cta": "Book a call"
+  },
+  "produzione": {
+    "title": "Build your community.",
+    "subtitle": "Custom animated characters, proprietary voice, continuous calendar. You become a format people wait for, not a brand that interrupts.",
+    "sections": {
+      "how": {
+        "title": "How it works",
+        "items": [
+          "Discovery: who your customer is, your tone, where you want to go.",
+          "Character development: design, voice, world, archetype.",
+          "Launch: 4 weeks of intensive production to start strong.",
+          "Monthly cadence: ~25 reels/month, analytics, iteration."
+        ]
+      },
+      "deliverables": {
+        "title": "What you get",
+        "items": [
+          "Character brand identity (visual + voice + tone)",
+          "~25 vertical reels per month, published for you",
+          "Editorial calendar and community management",
+          "Monthly report and roadmap for the next quarter"
+        ]
+      }
+    },
+    "cta": "Book a call"
+  },
+  "contatti": {
+    "title": "Let's talk.",
+    "subtitle": "Book a 30-minute call or send us a brief. We'll reply within 24 business hours.",
+    "calTitle": "Book a call",
+    "formTitle": "Send a brief"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Notice",
+      "updated": "Last updated: May 2026"
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Last updated: May 2026"
+    },
+    "notes": {
+      "title": "Legal Notes",
+      "updated": "Last updated: May 2026"
+    }
+  }
+}

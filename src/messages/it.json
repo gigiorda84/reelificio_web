@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "siteName": "reelificio",
+    "tagline": "l'agenzia che fa scalare i brand su Instagram",
+    "homeTitle": "reelificio — community che crescono, brand che scalano",
+    "homeDescription": "Costruiamo community su Instagram per i brand. Algoritmi che scoprono i trend, persone che sanno raccontarli. Oltre 1.000 reel al mese."
+  },
+  "nav": {
+    "partnership": "Partnership",
+    "produzione": "Produzione",
+    "contatti": "Contatti",
+    "cta": "Prenota una call"
+  },
+  "hero": {
+    "eyebrow": "1.000+ reel al mese · 3 community oltre i 100k",
+    "title": "Trasformiamo il tuo brand in una community.",
+    "subtitle": "Con script che convertono, voci che restano e personaggi che la gente vuole rivedere. Una scienza, non un colpo di fortuna.",
+    "cta": "Prenota una call gratuita",
+    "ctaSecondary": "Vedi come lavoriamo",
+    "chipLeft": "Follower e ROAS",
+    "chipTop": "1.000 video al mese",
+    "chipRight": "Produzione video"
+  },
+  "socialProof": {
+    "title": "Brand e community che fanno girare i nostri video",
+    "metrics": {
+      "videos": "video prodotti ogni mese",
+      "communities": "community sopra i 100k follower",
+      "growth": "follower aggiunti nell'ultimo anno"
+    }
+  },
+  "twoPaths": {
+    "title": "Due modi per lavorare con noi.",
+    "subtitle": "Sponsorizza una community che già esiste o costruisci la tua. In entrambi i casi, mettiamo il nostro studio al servizio del tuo brand.",
+    "partnership": {
+      "label": "Per i brand",
+      "title": "Sponsorizza una community.",
+      "body": "Entra dentro le nostre pagine. Personaggi, voci e formati già amati da centinaia di migliaia di follower. Integrazioni native, non interruzioni.",
+      "cta": "Scopri la partnership"
+    },
+    "produzione": {
+      "label": "Per chi vuole costruire",
+      "title": "Costruisci la tua community.",
+      "body": "Personaggi animati su misura, voice identity proprietaria, calendario editoriale e produzione continua. Il tuo brand diventa un format.",
+      "cta": "Scopri la produzione"
+    }
+  },
+  "howWeWork": {
+    "title": "L'arte e la scienza di creare contenuti video che funzionano.",
+    "subtitle": "Algoritmi per i trend. Persone per il mestiere. Sei fasi che si ripetono ogni mese, su ogni pagina.",
+    "steps": {
+      "trend": {
+        "title": "Scopriamo i trend con l'AI",
+        "body": "Tracciamo formati, suoni e hook in crescita prima che diventino mainstream."
+      },
+      "script": {
+        "title": "Scriviamo script che convertono",
+        "body": "Hook, corpo, chiusura, CTA. Logiche di testing su ogni batch."
+      },
+      "voice": {
+        "title": "Doppiamo con voci proprietarie",
+        "body": "Una voice identity per ogni pagina. Riconoscibile in due secondi."
+      },
+      "production": {
+        "title": "Animiamo e montiamo",
+        "body": "Personaggi proprietari, motion design, montaggio verticale ottimizzato per il feed."
+      },
+      "distribution": {
+        "title": "Pubblichiamo e distribuiamo",
+        "body": "Calendario, copy, hashtag, cross-posting. Niente buchi nel calendario."
+      },
+      "iterate": {
+        "title": "Analizziamo e iteriamo",
+        "body": "Ogni settimana guardiamo i numeri e cambiamo cosa serve. Niente fede, solo dati."
+      }
+    }
+  },
+  "pillars": {
+    "title": "Perché funziona.",
+    "items": {
+      "characters": {
+        "title": "Personaggi proprietari",
+        "body": "Non vendiamo facce, vendiamo IP. I personaggi restano nel tempo, le persone seguono i personaggi."
+      },
+      "voice": {
+        "title": "Voice identity",
+        "body": "Ogni community ha la sua voce. Doppiatori formati su un brief specifico per ogni pagina."
+      },
+      "cadence": {
+        "title": "Cadenza mensile",
+        "body": "25+ script per pagina ogni mese, un buffer di reel sempre pronto. La produzione non si ferma."
+      },
+      "data": {
+        "title": "Feedback dai dati",
+        "body": "Quello che funziona viene scalato la settimana dopo. Quello che non funziona viene spento."
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Community che abbiamo costruito.",
+    "subtitle": "Tre pagine, tre tonalità diverse, una sola logica: personaggi che la gente aspetta.",
+    "cta": "Guarda su Instagram",
+    "items": {
+      "fluffy": {
+        "name": "Fluffy Revolution",
+        "handle": "@fluffy.revolution",
+        "pitch": "Animazioni morbide, contenuti che ti restano in testa. Una community fatta di chi cerca leggerezza intelligente.",
+        "url": "https://www.instagram.com/fluffy.revolution/"
+      },
+      "hacker": {
+        "name": "Hacker Passivo Aggressivo",
+        "handle": "@hackerpassivoaggressivo",
+        "pitch": "Sarcasmo tech, vita d'ufficio, micro-aggressioni di chi vive davanti a uno schermo. Un personaggio che ride di te e con te.",
+        "url": "https://www.instagram.com/hackerpassivoaggressivo/"
+      },
+      "cipidilloo": {
+        "name": "Cipidilloo",
+        "handle": "@cipidilloo",
+        "pitch": "Voce, ritmo, un format che gira ogni settimana. Una community che non aspetta altro che il prossimo episodio.",
+        "url": "https://www.instagram.com/cipidilloo/"
+      }
+    }
+  },
+  "faq": {
+    "title": "F.A.Q.",
+    "items": {
+      "guarantee": {
+        "q": "Come fate a garantire questi risultati?",
+        "a": "Non li garantiamo nel senso magico del termine. Li produciamo: ogni mese sforniamo decine di reel testati su variabili diverse (hook, voce, personaggio, formato). Quello che funziona viene scalato. È un processo, non un colpo di fortuna."
+      },
+      "cost": {
+        "q": "Quanto costa lavorare con voi?",
+        "a": "Dipende dal tipo di collaborazione. Una sponsorizzazione su una community esistente parte da budget contenuti; la produzione di una nuova pagina richiede un investimento mensile dedicato. Il modo più veloce per capirlo è una call: ti diciamo se ha senso prima di parlare di numeri."
+      },
+      "who": {
+        "q": "Con chi lavorate?",
+        "a": "Brand consumer che hanno qualcosa da raccontare e vogliono farlo nel modo in cui le persone vogliono ascoltare. Food, tech, lifestyle, finance, retail. Non lavoriamo con tutti: prima ci sentiamo, poi decidiamo insieme."
+      },
+      "why": {
+        "q": "Perché un brand dovrebbe fare contenuti social oggi?",
+        "a": "Perché l'attenzione è dove sono i feed, non dove sono le insegne. Una community su Instagram è un canale diretto verso il tuo cliente, senza intermediari, senza CPM da rinegoziare ogni mese. Costa costruirla, ma vale la pena."
+      },
+      "talent": {
+        "q": "Chi mette la faccia nei video? Fornite voi i talent?",
+        "a": "Nella maggior parte dei casi sì. Costruiamo personaggi proprietari (animati o reali) che diventano il volto del brand. Se preferisci usare un talent tuo, lo integriamo nel format."
+      },
+      "ads": {
+        "q": "Vi occupate di contenuti organici e advertising?",
+        "a": "Sì. Lo stesso contenuto che funziona organicamente diventa la base creativa per le campagne ads. Stesso linguaggio, stesso personaggio, costo per risultato più basso."
+      }
+    }
+  },
+  "ctaBand": {
+    "title": "Parliamone.",
+    "subtitle": "Una call di 30 minuti, gratuita, senza venderti niente che non ti serva.",
+    "calLabel": "Prenota direttamente",
+    "formLabel": "Oppure scrivici un brief",
+    "form": {
+      "name": "Nome",
+      "company": "Azienda",
+      "handle": "Handle Instagram",
+      "message": "Raccontaci",
+      "submit": "Invia brief",
+      "sending": "Invio in corso…",
+      "successTitle": "Ricevuto.",
+      "successBody": "Ti rispondiamo entro 24 ore lavorative.",
+      "errorTitle": "Qualcosa è andato storto.",
+      "errorBody": "Riprova o scrivici a hello@reelificio.com."
+    }
+  },
+  "footer": {
+    "tagline": "Costruiamo community che scalano.",
+    "company": "Sweet Life Faktory · Corso Dante Alighieri 118, 10126 Torino",
+    "vat": "P.IVA / CF 11515270012",
+    "sdi": "Codice Univoco W7YVJK9",
+    "rights": "Tutti i diritti riservati.",
+    "legal": {
+      "privacy": "Privacy",
+      "cookies": "Cookie Policy",
+      "notes": "Note Legali"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok"
+    }
+  },
+  "partnership": {
+    "title": "Sponsorizza una community.",
+    "subtitle": "Le nostre pagine hanno già il pubblico. Tu hai un prodotto. Li facciamo incontrare in modo nativo, dentro al format che il pubblico ama.",
+    "sections": {
+      "how": {
+        "title": "Come funziona",
+        "items": [
+          "Brief insieme: chi sei, cosa vendi, cosa vuoi ottenere.",
+          "Scegliamo le pagine giuste per il tuo brand.",
+          "Scriviamo il reel come se fosse un episodio in più della community.",
+          "Pubblichiamo, misuriamo, ti diamo i dati."
+        ]
+      },
+      "deliverables": {
+        "title": "Cosa ricevi",
+        "items": [
+          "1+ reel sponsorizzato su una o più community",
+          "Diritti d'uso del contenuto per i tuoi canali",
+          "Report con views, salvataggi, condivisioni, click",
+          "Opzione di scaling con ads su lookalike"
+        ]
+      }
+    },
+    "cta": "Prenota una call"
+  },
+  "produzione": {
+    "title": "Costruisci la tua community.",
+    "subtitle": "Personaggi animati su misura, voce proprietaria, calendario continuo. Diventi un format che le persone aspettano, non un brand che le interrompe.",
+    "sections": {
+      "how": {
+        "title": "Come funziona",
+        "items": [
+          "Discovery: chi è il tuo cliente, qual è il tuo tono, dove vuoi arrivare.",
+          "Sviluppo personaggio: design, voce, mondo, archetipo.",
+          "Lancio: 4 settimane di produzione intensiva per partire forte.",
+          "Cadenza mensile: ~25 reel/mese, analisi, iterazione."
+        ]
+      },
+      "deliverables": {
+        "title": "Cosa ricevi",
+        "items": [
+          "Brand identity del personaggio (visual + voice + tono)",
+          "~25 reel verticali al mese, pubblicati per te",
+          "Calendario editoriale e gestione community",
+          "Report mensile e roadmap del trimestre successivo"
+        ]
+      }
+    },
+    "cta": "Prenota una call"
+  },
+  "contatti": {
+    "title": "Parliamone.",
+    "subtitle": "Prenota una call di 30 minuti o lasciaci un brief. Ti rispondiamo entro 24 ore lavorative.",
+    "calTitle": "Prenota una call",
+    "formTitle": "Scrivici un brief"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Informativa Privacy",
+      "updated": "Ultimo aggiornamento: maggio 2026"
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Ultimo aggiornamento: maggio 2026"
+    },
+    "notes": {
+      "title": "Note Legali",
+      "updated": "Ultimo aggiornamento: maggio 2026"
+    }
+  }
+}

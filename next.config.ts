@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type {NextConfig} from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Marketing site is mostly static — rely on Vercel edge for delivery.
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
