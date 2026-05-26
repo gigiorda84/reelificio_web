@@ -8,6 +8,10 @@ const paths = [
   '/partnership',
   '/produzione',
   '/contatti',
+  '/lavori/fluffy',
+  '/lavori/hacker',
+  '/lavori/cipidilloo',
+  '/lavori/porcino-papaya',
   '/privacy',
   '/cookie-policy',
   '/note-legali'

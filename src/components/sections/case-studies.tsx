@@ -1,7 +1,13 @@
 import {getTranslations} from 'next-intl/server';
+import {Link} from '@/i18n/navigation';
 import {Reveal} from '@/components/reveal';
 
-const items = ['fluffy', 'hacker', 'cipidilloo'] as const;
+const items = [
+  {key: 'fluffy', slug: 'fluffy', videoSrc: '/reels/fluffy.mp4'},
+  {key: 'hacker', slug: 'hacker', videoSrc: '/reels/hacker.mp4'},
+  {key: 'cipidilloo', slug: 'cipidilloo', videoSrc: '/reels/cipidilloo.mp4'},
+  {key: 'porcino', slug: 'porcino-papaya', videoSrc: '/reels/porcino-papaya.mp4'},
+] as const;
 
 export async function CaseStudies() {
   const t = await getTranslations('caseStudies');
@@ -20,13 +26,13 @@ export async function CaseStudies() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {items.map((key, i) => (
-            <Reveal key={key} delay={0.1 + i * 0.08}>
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
+          {items.map(({key, slug, videoSrc}, i) => (
+            <Reveal key={key} delay={0.1 + i * 0.06}>
               <article className="brutal-box flex h-full flex-col overflow-hidden">
                 <div className="aspect-[9/14] w-full overflow-hidden border-b-2 border-ink bg-ink">
                   <video
-                    src="/placeholder.mp4"
+                    src={videoSrc}
                     autoPlay
                     muted
                     loop
@@ -45,14 +51,22 @@ export async function CaseStudies() {
                   <p className="mt-4 font-sans text-sm text-ink/80">
                     {t(`items.${key}.pitch`)}
                   </p>
-                  <a
-                    href={t(`items.${key}.url`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight hover:text-accent-2"
-                  >
-                    {t('cta')} <span aria-hidden>↗</span>
-                  </a>
+                  <div className="mt-6 flex flex-col gap-2">
+                    <Link
+                      href={`/lavori/${slug}`}
+                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight hover:text-accent-2"
+                    >
+                      {t('ctaWork')} <span aria-hidden>→</span>
+                    </Link>
+                    <a
+                      href={t(`items.${key}.url`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight text-ink/60 hover:text-accent-2"
+                    >
+                      {t('cta')} <span aria-hidden>↗</span>
+                    </a>
+                  </div>
                 </div>
               </article>
             </Reveal>

@@ -98,8 +98,9 @@
   },
   "caseStudies": {
     "title": "Communities we've built.",
-    "subtitle": "Three pages, three different tones, one same logic: characters people wait for.",
+    "subtitle": "Four pages, four different tones, one same logic: characters people wait for.",
     "cta": "View on Instagram",
+    "ctaWork": "View project",
     "items": {
       "fluffy": {
         "name": "Fluffy Revolution",
@@ -118,8 +119,19 @@
         "handle": "@cipidilloo",
         "pitch": "Voice, rhythm, a format that lands every week. A community waiting for the next episode.",
         "url": "https://www.instagram.com/cipidilloo/"
+      },
+      "porcino": {
+        "name": "Porcino & Papaya",
+        "handle": "@porcino.papaya",
+        "pitch": "A universe of flavours told with irony. A food community that found its voice and won't let go.",
+        "url": "https://www.instagram.com/porcino.papaya/"
       }
     }
+  },
+  "lavori": {
+    "back": "← All works",
+    "ctaInstagram": "View on Instagram ↗",
+    "ctaCall": "Book a call"
   },
   "faq": {
     "title": "F.A.Q.",
