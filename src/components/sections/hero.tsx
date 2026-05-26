@@ -58,7 +58,7 @@ export async function Hero() {
             text={t('chipRight')}
             className="bottom-8 right-0 translate-x-2 md:translate-x-6"
           />
-          <PhoneFrame />
+          <PhoneFrame videoSrc="/placeholder.mp4" />
         </div>
       </div>
     </section>

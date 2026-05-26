@@ -25,11 +25,15 @@ export async function CaseStudies() {
             <Reveal key={key} delay={0.1 + i * 0.08}>
               <article className="brutal-box flex h-full flex-col overflow-hidden">
                 <div className="aspect-[9/14] w-full overflow-hidden border-b-2 border-ink bg-ink">
-                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3">
-                    <span className="font-display text-2xl lowercase text-paper">
-                      {t(`items.${key}.handle`)}
-                    </span>
-                  </div>
+                  <video
+                    src="/placeholder.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-display text-2xl leading-tight">
