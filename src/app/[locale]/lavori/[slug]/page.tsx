@@ -56,7 +56,6 @@ export default async function LavoriPage({
   const name = t(`items.${messageKey}.name`);
   const handle = t(`items.${messageKey}.handle`);
   const pitch = t(`items.${messageKey}.pitch`);
-  const url = t(`items.${messageKey}.url`);
 
   return (
     <>
@@ -84,18 +83,10 @@ export default async function LavoriPage({
                 <span className="gradient-text">{name}</span>
               </h1>
               <p className="mt-6 max-w-lg font-sans text-lg text-ink/80">{pitch}</p>
-              <div className="mt-8 flex flex-wrap items-center gap-6">
+              <div className="mt-8">
                 <ButtonLink href="/contatti" size="lg">
                   {tLavori('ctaCall')}
                 </ButtonLink>
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-sm uppercase tracking-tight hover:text-accent-2"
-                >
-                  {tLavori('ctaInstagram')}
-                </a>
               </div>
             </Reveal>
           </div>

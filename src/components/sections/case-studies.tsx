@@ -51,21 +51,13 @@ export async function CaseStudies() {
                   <p className="mt-4 font-sans text-sm text-ink/80">
                     {t(`items.${key}.pitch`)}
                   </p>
-                  <div className="mt-6 flex flex-col gap-2">
+                  <div className="mt-6">
                     <Link
                       href={`/lavori/${slug}`}
                       className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight hover:text-accent-2"
                     >
                       {t('ctaWork')} <span aria-hidden>→</span>
                     </Link>
-                    <a
-                      href={t(`items.${key}.url`)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight text-ink/60 hover:text-accent-2"
-                    >
-                      {t('cta')} <span aria-hidden>↗</span>
-                    </a>
                   </div>
                 </div>
               </article>
