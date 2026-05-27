@@ -28,7 +28,7 @@ export function LocaleSwitcher({className}: {className?: string}) {
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-0 border-2 border-ink bg-paper font-mono text-xs uppercase',
+        'inline-flex items-center gap-0 border border-white/20 bg-white/5 font-mono text-xs uppercase',
         className
       )}
       role="group"
@@ -43,8 +43,8 @@ export function LocaleSwitcher({className}: {className?: string}) {
           className={cn(
             'h-8 w-10 transition-colors',
             l === locale
-              ? 'bg-ink text-paper'
-              : 'bg-paper text-ink hover:bg-paper-shade'
+              ? 'bg-lime text-[#020103]'
+              : 'text-ink/60 hover:text-ink'
           )}
         >
           {l}

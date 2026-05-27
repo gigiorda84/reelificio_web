@@ -5,31 +5,18 @@ import {PhoneFrame} from '@/components/phone-frame';
 
 export async function Hero() {
   const t = await getTranslations('hero');
-  const meta = await getTranslations('meta');
 
   return (
-    <section className="relative overflow-hidden border-b-2 border-ink">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:gap-8 md:px-8 md:py-24">
+    <section className="relative overflow-hidden bg-paper">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-8 pb-16 md:grid-cols-2 md:gap-8 md:px-8 md:pt-12 md:pb-28">
         <div className="flex flex-col">
-          <div className="flex items-center gap-3">
-            <Wordmark />
-            <span className="font-mono text-xs text-ink/70 md:text-sm">
-              , {meta('tagline')}
-            </span>
-          </div>
+          <Wordmark imageClassName="h-40 md:h-64" />
 
-          <p className="mt-10 max-w-[1.5em] font-mono text-xs uppercase tracking-widest text-ink/60">
-            ↘
-          </p>
-          <p className="mt-2 font-mono text-xs uppercase tracking-widest text-ink/70">
-            {t('eyebrow')}
-          </p>
-
-          <h1 className="mt-4 font-display text-[clamp(2.2rem,5.5vw,4.5rem)] leading-[0.95] tracking-tight">
-            <span className="gradient-text">{t('title')}</span>
+          <h1 className="mt-10 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[0.9] tracking-tight">
+            {t('title')}
           </h1>
 
-          <p className="mt-6 max-w-xl font-sans text-lg text-ink/80 md:text-xl">
+          <p className="mt-6 max-w-xl font-sans text-lg text-ink/70 md:text-xl">
             {t('subtitle')}
           </p>
 
@@ -47,29 +34,38 @@ export async function Hero() {
           <ChipFloating
             text={t('chipTop')}
             className="-top-2 right-2 md:-top-4 md:right-6"
+            accent="lime"
           />
           <ChipFloating
             text={t('chipLeft')}
             className="left-0 top-1/3 -translate-x-2 md:-translate-x-6"
+            accent="pink"
           />
           <ChipFloating
             text={t('chipRight')}
             className="bottom-8 right-0 translate-x-2 md:translate-x-6"
+            accent="pink"
           />
-          <PhoneFrame videoSrc="/placeholder.mp4" />
+          <PhoneFrame videoSrc="/reels/fluffy.mp4" />
         </div>
       </div>
     </section>
   );
 }
 
-function ChipFloating({text, className}: {text: string; className?: string}) {
+function ChipFloating({
+  text,
+  className,
+  accent = 'lime'
+}: {
+  text: string;
+  className?: string;
+  accent?: 'lime' | 'pink';
+}) {
+  const color = accent === 'lime' ? 'bg-lime text-[#020103]' : 'bg-pink text-white';
   return (
-    <div
-      className={`absolute z-10 ${className ?? ''}`}
-      style={{transform: undefined}}
-    >
-      <div className="brutal-box-sm rounded-full px-4 py-2">
+    <div className={`absolute z-10 ${className ?? ''}`}>
+      <div className={`rounded-full px-4 py-2 ${color}`}>
         <span className="font-mono text-xs font-medium uppercase tracking-tight">
           {text}
         </span>

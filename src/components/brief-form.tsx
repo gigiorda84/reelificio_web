@@ -33,9 +33,9 @@ export function BriefForm({className}: {className?: string}) {
 
   if (status === 'success') {
     return (
-      <div className={cn('brutal-box p-8', className)}>
-        <p className="font-display text-2xl">{t('successTitle')}</p>
-        <p className="mt-2 font-sans text-base text-ink/80">{t('successBody')}</p>
+      <div className={cn('border border-[#020103]/20 p-8', className)}>
+        <p className="font-display text-2xl text-[#020103]">{t('successTitle')}</p>
+        <p className="mt-2 font-sans text-base text-[#020103]/70">{t('successBody')}</p>
       </div>
     );
   }
@@ -57,12 +57,12 @@ export function BriefForm({className}: {className?: string}) {
       <button
         type="submit"
         disabled={pending}
-        className="h-12 border-2 border-ink bg-ink px-6 font-display text-base lowercase text-paper shadow-[6px_6px_0_0_var(--accent-2)] transition-transform hover:-translate-x-[2px] hover:-translate-y-[2px] disabled:opacity-60"
+        className="h-12 bg-[#020103] px-6 font-display text-base uppercase tracking-tight text-lime transition-opacity hover:opacity-90 disabled:opacity-60"
       >
         {pending ? t('sending') : t('submit')}
       </button>
       {status === 'error' && (
-        <div className="border-2 border-ink bg-accent-yellow p-4 font-mono text-sm">
+        <div className="border border-[#020103]/30 bg-[#020103]/10 p-4 font-mono text-sm text-[#020103]">
           <strong>{t('errorTitle')}</strong> {t('errorBody')}
         </div>
       )}
@@ -86,10 +86,10 @@ function Field({
   placeholder?: string;
 }) {
   const baseClass =
-    'mt-2 w-full border-2 border-ink bg-paper px-4 py-3 font-sans text-base text-ink placeholder-ink/40 focus:bg-paper-shade focus:outline-none';
+    'mt-2 w-full border border-[#020103]/30 bg-lime/50 px-4 py-3 font-sans text-base text-[#020103] placeholder-[#020103]/40 focus:border-[#020103] focus:bg-lime/70 focus:outline-none';
   return (
     <label className="block">
-      <span className="font-mono text-xs uppercase tracking-tight text-ink/70">
+      <span className="font-mono text-xs uppercase tracking-tight text-[#020103]/70">
         {label}
         {required ? ' *' : ''}
       </span>

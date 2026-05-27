@@ -13,7 +13,7 @@ export async function CaseStudies() {
   const t = await getTranslations('caseStudies');
 
   return (
-    <section className="border-b-2 border-ink bg-paper-shade">
+    <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
           <h2 className="max-w-3xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight">
@@ -21,7 +21,7 @@ export async function CaseStudies() {
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-4 max-w-2xl font-sans text-base text-ink/80 md:text-lg">
+          <p className="mt-4 max-w-2xl font-sans text-base text-ink/70 md:text-lg">
             {t('subtitle')}
           </p>
         </Reveal>
@@ -29,8 +29,8 @@ export async function CaseStudies() {
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
           {items.map(({key, slug, videoSrc}, i) => (
             <Reveal key={key} delay={0.1 + i * 0.06}>
-              <article className="brutal-box flex h-full flex-col overflow-hidden">
-                <div className="aspect-[9/14] w-full overflow-hidden border-b-2 border-ink bg-ink">
+              <article className="group flex h-full flex-col overflow-hidden border border-white/10 bg-white/[0.03] transition-colors hover:border-lime/30">
+                <div className="aspect-[9/14] w-full overflow-hidden bg-paper-shade">
                   <video
                     src={videoSrc}
                     autoPlay
@@ -45,16 +45,16 @@ export async function CaseStudies() {
                   <h3 className="font-display text-2xl leading-tight">
                     {t(`items.${key}.name`)}
                   </h3>
-                  <span className="mt-1 font-mono text-xs uppercase text-ink/60">
+                  <span className="mt-1 font-mono text-xs uppercase text-lime/70">
                     {t(`items.${key}.handle`)}
                   </span>
-                  <p className="mt-4 font-sans text-sm text-ink/80">
+                  <p className="mt-4 font-sans text-sm text-ink/70">
                     {t(`items.${key}.pitch`)}
                   </p>
                   <div className="mt-6">
                     <Link
                       href={`/lavori/${slug}`}
-                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight hover:text-accent-2"
+                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight text-ink/60 transition-colors hover:text-lime"
                     >
                       {t('ctaWork')} <span aria-hidden>→</span>
                     </Link>

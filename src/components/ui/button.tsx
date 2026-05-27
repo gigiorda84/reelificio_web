@@ -2,15 +2,15 @@ import {forwardRef, type ButtonHTMLAttributes, type AnchorHTMLAttributes} from '
 import {cn} from '@/lib/cn';
 
 const base =
-  'inline-flex items-center justify-center gap-2 border-2 border-ink font-display lowercase tracking-tight ' +
-  'transition-transform duration-150 ease-out ' +
-  'hover:-translate-x-[2px] hover:-translate-y-[2px] active:translate-x-0 active:translate-y-0 ' +
-  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper';
+  'inline-flex items-center justify-center gap-2 font-display uppercase tracking-tight ' +
+  'transition-all duration-200 ease-out ' +
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-paper';
 
 const variants = {
-  primary: 'bg-ink text-paper hover:opacity-90',
-  secondary: 'bg-paper text-ink hover:bg-ink hover:text-paper transition-colors',
-  ghost: 'bg-transparent text-ink border-transparent hover:bg-paper-shade'
+  primary: 'bg-lime text-[#020103] border-2 border-lime hover:bg-lime/90 active:scale-[0.98]',
+  secondary:
+    'bg-transparent text-ink border border-ink/30 hover:border-ink/60 hover:bg-white/5 active:scale-[0.98]',
+  ghost: 'bg-transparent text-ink border border-transparent hover:bg-white/5'
 } as const;
 
 const sizes = {

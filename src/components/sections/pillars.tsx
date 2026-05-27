@@ -7,7 +7,7 @@ export async function Pillars() {
   const t = await getTranslations('pillars');
 
   return (
-    <section className="border-b-2 border-ink">
+    <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
           <h2 className="max-w-2xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight">
@@ -18,14 +18,14 @@ export async function Pillars() {
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {items.map((key, i) => (
             <Reveal key={key} delay={i * 0.06}>
-              <div className="brutal-box-sm flex h-full flex-col p-6">
-                <span className="font-mono text-xs uppercase tracking-widest text-ink/50">
+              <div className="flex h-full flex-col border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-lime/30">
+                <span className="font-mono text-xs uppercase tracking-widest text-lime">
                   0{i + 1}
                 </span>
                 <h3 className="mt-3 font-display text-xl leading-tight md:text-2xl">
                   {t(`items.${key}.title`)}
                 </h3>
-                <p className="mt-3 font-sans text-sm text-ink/80">
+                <p className="mt-3 font-sans text-sm text-ink/70">
                   {t(`items.${key}.body`)}
                 </p>
               </div>

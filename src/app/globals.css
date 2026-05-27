@@ -1,34 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* surface / text */
-  --background: #000000;
-  --foreground: #ffffff;
-  --ink: #ffffff;
-  --paper: #000000;
-  --paper-shade: #111111;
-  --neutral: #000000;
-  --border: rgba(255, 255, 255, 0.15);
+  --background: #020103;
+  --foreground: #F2F2EF;
+  --ink: #F2F2EF;
+  --paper: #020103;
+  --paper-shade: #2F0656;
+  --purple: #2F0656;
+  --lime: #DBF404;
+  --pink: #F530A0;
+  --border: rgba(242, 242, 239, 0.12);
 
-  /* monochromatic accents (luxury = no colour differentiation) */
-  --primary: #fafafa;
-  --secondary: #fafafa;
-  --accent-1: #fafafa;
-  --accent-2: #fafafa;
-  --accent-3: #fafafa;
-  --accent-yellow: #fafafa;
+  --primary: #DBF404;
+  --primary-fg: #020103;
+  --accent-1: #DBF404;
+  --accent-2: #F530A0;
+  --accent-3: #2F0656;
+  --accent-yellow: #DBF404;
 
-  /* semantic status colours (kept for functional states only) */
   --success: #16a34a;
   --warning: #d97706;
   --danger: #dc2626;
 
-  /* shadows removed */
   --shadow: none;
   --shadow-sm: none;
   --shadow-lg: none;
 
-  /* border-radius (8pt grid) */
   --radius-sm: 4px;
   --radius-md: 8px;
 }
@@ -39,9 +36,11 @@
   --color-ink: var(--ink);
   --color-paper: var(--paper);
   --color-paper-shade: var(--paper-shade);
-  --color-neutral: var(--neutral);
+  --color-purple: var(--purple);
+  --color-lime: var(--lime);
+  --color-pink: var(--pink);
   --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
+  --color-primary-fg: var(--primary-fg);
   --color-accent-1: var(--accent-1);
   --color-accent-2: var(--accent-2);
   --color-accent-3: var(--accent-3);
@@ -73,21 +72,18 @@ body {
 }
 
 .brutal-box {
-  border: 2px solid var(--ink);
-  background: var(--paper);
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  background: rgba(242, 242, 239, 0.04);
 }
 
 .brutal-box-sm {
-  border: 2px solid var(--ink);
-  background: var(--paper);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  background: rgba(242, 242, 239, 0.04);
 }
 
 .brutal-box-lg {
-  border: 2px solid var(--ink);
-  background: var(--paper);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  background: rgba(242, 242, 239, 0.04);
 }
 
 .wordmark-underline {

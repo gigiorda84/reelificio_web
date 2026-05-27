@@ -38,12 +38,15 @@ These were settled with the user; do not re-litigate without explicit approval.
   Hotjar / YouTube embeds without flagging the consent-banner consequence.
 - **Video**: Self-hosted MP4/WebM only. No Instagram / YouTube / TikTok
   embeds (same reason as above + LCP/CLS).
-- **Design**: **Luxury dark** (typeui.sh/luxury) — black `#000000` bg, white
-  `#ffffff` text, **Oswald** as single typeface (both display and body),
-  JetBrains Mono for labels/mono, no color accents, no hard offset shadows,
-  subtle `rgba(255,255,255,0.15)` borders. Negative space and type scale are
-  the only decoration. Previous soft-brutalist gradient style was replaced in
-  May 2026 at explicit user request.
+- **Design**: **Immersive dark** (typeui.sh/immersive) — palette:
+  `#020103` near-black bg, `#2F0656` deep-purple accent bg, `#F2F2EF`
+  cream text, `#DBF404` lime (primary CTA + accent), `#F530A0` hot-pink
+  (secondary accent). **Oswald** as single typeface (display + body),
+  JetBrains Mono for labels/mono. Sections alternate black/purple using
+  `bg-paper`/`bg-paper-shade`. CTA band uses `bg-lime` with black text.
+  Footer uses `bg-paper-shade` (purple). Borders: `1px solid rgba(242,242,239,0.12)`.
+  No shadows. Previous luxury-dark monochrome replaced in May 2026 at explicit
+  user request.
 - **Voice**: Confident, craft-led. "AI for trend-spotting + humans for
   craft" positioning. No money-back guarantee.
 - **Featured case studies**: `@fluffy.revolution`,

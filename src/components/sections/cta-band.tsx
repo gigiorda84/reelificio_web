@@ -7,21 +7,21 @@ export async function CtaBand() {
   const t = await getTranslations('ctaBand');
 
   return (
-    <section className="border-b-2 border-ink bg-ink text-paper">
+    <section className="bg-lime">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-2 md:gap-16 md:px-8 md:py-28">
         <Reveal>
           <div>
-            <h2 className="font-display text-[clamp(2.4rem,6vw,4.5rem)] leading-none">
-              <span className="gradient-text">{t('title')}</span>
+            <h2 className="font-display text-[clamp(2.4rem,6vw,4.5rem)] leading-none text-[#020103]">
+              {t('title')}
             </h2>
-            <p className="mt-6 max-w-md font-sans text-lg text-paper/80">
+            <p className="mt-6 max-w-md font-sans text-lg text-[#020103]/80">
               {t('subtitle')}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <ButtonLink
                 href="/contatti"
                 size="lg"
-                className="bg-paper text-ink shadow-[6px_6px_0_0_var(--accent-2)]"
+                className="bg-[#020103] text-lime border-2 border-[#020103] hover:bg-[#020103]/90"
               >
                 {t('calLabel')}
               </ButtonLink>
@@ -31,10 +31,10 @@ export async function CtaBand() {
 
         <Reveal delay={0.1}>
           <div>
-            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-paper/60">
+            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#020103]/60">
               {t('formLabel')}
             </p>
-            <BriefForm className="bg-paper text-ink" />
+            <BriefForm className="[--form-ink:#020103] [--form-paper:#F2F2EF]" />
           </div>
         </Reveal>
       </div>

@@ -11,10 +11,10 @@ export async function SocialProof() {
   ];
 
   return (
-    <section className="border-b-2 border-ink bg-paper-shade">
-      <div className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
+    <section className="bg-paper-shade">
+      <div className="mx-auto max-w-7xl px-4 py-14 md:px-8 md:py-20">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-widest text-ink/70">
+          <p className="font-mono text-xs uppercase tracking-widest text-lime/80">
             {t('title')}
           </p>
         </Reveal>
@@ -22,11 +22,11 @@ export async function SocialProof() {
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           {metrics.map((m, i) => (
             <Reveal key={i} delay={i * 0.08}>
-              <div className="brutal-box flex items-end justify-between gap-4 p-6">
-                <div className="font-display text-5xl leading-none md:text-6xl">
+              <div className="flex items-end justify-between gap-4 border border-white/10 p-6">
+                <div className="font-display text-5xl leading-none text-lime md:text-6xl">
                   {m.value}
                 </div>
-                <div className="max-w-[60%] text-right font-mono text-xs uppercase leading-tight text-ink/70">
+                <div className="max-w-[60%] text-right font-mono text-xs uppercase leading-tight text-ink/60">
                   {m.label}
                 </div>
               </div>
