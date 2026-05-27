@@ -8,16 +8,13 @@ const base =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper';
 
 const variants = {
-  primary:
-    'bg-ink text-paper shadow-[6px_6px_0_0_var(--accent-2)] hover:shadow-[8px_8px_0_0_var(--accent-2)]',
-  secondary:
-    'bg-paper text-ink shadow-[6px_6px_0_0_var(--ink)] hover:shadow-[8px_8px_0_0_var(--ink)]',
-  ghost:
-    'bg-transparent text-ink shadow-none border-transparent hover:bg-paper-shade'
+  primary: 'bg-ink text-paper hover:opacity-90',
+  secondary: 'bg-paper text-ink hover:bg-ink hover:text-paper transition-colors',
+  ghost: 'bg-transparent text-ink border-transparent hover:bg-paper-shade'
 } as const;
 
 const sizes = {
-  sm: 'h-10 px-4 text-sm',
+  sm: 'h-11 px-4 text-sm',
   md: 'h-12 px-6 text-base',
   lg: 'h-14 px-8 text-lg'
 } as const;

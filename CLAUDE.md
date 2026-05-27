@@ -38,9 +38,12 @@ These were settled with the user; do not re-litigate without explicit approval.
   Hotjar / YouTube embeds without flagging the consent-banner consequence.
 - **Video**: Self-hosted MP4/WebM only. No Instagram / YouTube / TikTok
   embeds (same reason as above + LCP/CLS).
-- **Design**: Soft-brutalist — chunky type, hard-shadow boxes, custom
-  blue→magenta→coral gradient. Not raw typeui.sh brutalism, not a namstudio
-  clone.
+- **Design**: **Luxury dark** (typeui.sh/luxury) — black `#000000` bg, white
+  `#ffffff` text, **Oswald** as single typeface (both display and body),
+  JetBrains Mono for labels/mono, no color accents, no hard offset shadows,
+  subtle `rgba(255,255,255,0.15)` borders. Negative space and type scale are
+  the only decoration. Previous soft-brutalist gradient style was replaced in
+  May 2026 at explicit user request.
 - **Voice**: Confident, craft-led. "AI for trend-spotting + humans for
   craft" positioning. No money-back guarantee.
 - **Featured case studies**: `@fluffy.revolution`,
@@ -119,8 +122,9 @@ No test suite yet. `pnpm typecheck` is the floor.
   discussion. The site is meant to be stateless beyond the brief form.
 - **Don't add a consent banner** unless we also add a cookie-dropping
   script. Right now we drop zero cookies — see PLAN.md §2.
-- **Match the soft-brutalist style** when adding sections: chunky type, hard
-  shadows, generous whitespace, the gradient as accent.
+- **Match the luxury dark style** when adding sections: Oswald heavy type,
+  generous whitespace, `rgba(255,255,255,0.15)` borders, no shadows, no color.
+  Typography and space are the only hierarchy tools.
 
 ## Outstanding inputs needed before launch
 

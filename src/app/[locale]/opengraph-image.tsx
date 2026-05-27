@@ -3,7 +3,7 @@ import {getTranslations} from 'next-intl/server';
 
 export const size = {width: 1200, height: 630};
 export const contentType = 'image/png';
-export const alt = 'reelificio — community che crescono, brand che scalano';
+export const alt = 'reelificio — la prima agenzia italiana di contenuti animati virali';
 
 export default async function OG({params}: {params: {locale: string}}) {
   const t = await getTranslations({locale: params.locale, namespace: 'meta'});
@@ -18,9 +18,8 @@ export default async function OG({params}: {params: {locale: string}}) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           padding: 80,
-          background:
-            'linear-gradient(135deg, #2f5bff 0%, #ff3da6 55%, #ff7a3d 100%)',
-          color: '#0a0a0a',
+          background: '#000000',
+          color: '#ffffff',
           fontFamily: 'system-ui, -apple-system, sans-serif'
         }}
       >
@@ -36,10 +35,10 @@ export default async function OG({params}: {params: {locale: string}}) {
               fontSize: 36,
               fontWeight: 900,
               textTransform: 'lowercase',
-              background: '#0a0a0a',
-              color: '#faf8f3',
+              background: '#ffffff',
+              color: '#000000',
               padding: '8px 18px',
-              border: '4px solid #0a0a0a'
+              border: '2px solid #ffffff'
             }}
           >
             reelificio
@@ -48,9 +47,9 @@ export default async function OG({params}: {params: {locale: string}}) {
             style={{
               fontSize: 22,
               fontFamily: 'ui-monospace, SFMono-Regular, monospace',
-              background: '#faf8f3',
+              color: '#ffffff',
               padding: '6px 14px',
-              border: '3px solid #0a0a0a'
+              border: '1px solid rgba(255,255,255,0.3)'
             }}
           >
             www.reelificio.com
@@ -60,10 +59,8 @@ export default async function OG({params}: {params: {locale: string}}) {
         <div
           style={{
             display: 'flex',
-            background: '#faf8f3',
-            border: '6px solid #0a0a0a',
+            border: '1px solid rgba(255,255,255,0.2)',
             padding: '40px 48px',
-            boxShadow: '14px 14px 0 0 #0a0a0a',
             fontSize: 72,
             fontWeight: 900,
             lineHeight: 1.02,

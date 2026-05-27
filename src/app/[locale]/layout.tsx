@@ -2,7 +2,7 @@ import type {Metadata, Viewport} from 'next';
 import {notFound} from 'next/navigation';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
-import {Inter, Archivo_Black, JetBrains_Mono} from 'next/font/google';
+import {Oswald, JetBrains_Mono} from 'next/font/google';
 
 import {Analytics} from '@vercel/analytics/next';
 import {SpeedInsights} from '@vercel/speed-insights/next';
@@ -14,16 +14,10 @@ import {JsonLd} from '@/components/json-ld';
 import {PlausibleScript} from '@/components/plausible';
 import '../globals.css';
 
-const inter = Inter({
-  variable: '--font-inter',
+const oswald = Oswald({
+  variable: '--font-oswald',
   subsets: ['latin'],
-  display: 'swap'
-});
-
-const archivoBlack = Archivo_Black({
-  variable: '--font-archivo-black',
-  subsets: ['latin'],
-  weight: '400',
+  weight: ['200', '300', '400', '500', '600', '700'],
   display: 'swap'
 });
 
@@ -38,7 +32,7 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#faf8f3',
+  themeColor: '#000000',
   width: 'device-width',
   initialScale: 1
 };
@@ -103,7 +97,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${archivoBlack.variable} ${jetbrainsMono.variable}`}
+      className={`${oswald.variable} ${jetbrainsMono.variable}`}
     >
       <body className="min-h-dvh bg-paper text-ink antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>

@@ -1,19 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf8f3;
-  --foreground: #0a0a0a;
-  --ink: #0a0a0a;
-  --paper: #faf8f3;
-  --paper-shade: #f0ece2;
-  --border: #0a0a0a;
-  --accent-1: #2f5bff;
-  --accent-2: #ff3da6;
-  --accent-3: #ff7a3d;
-  --accent-yellow: #ffe14a;
-  --shadow: 6px 6px 0 0 var(--ink);
-  --shadow-sm: 3px 3px 0 0 var(--ink);
-  --shadow-lg: 10px 10px 0 0 var(--ink);
+  /* surface / text */
+  --background: #000000;
+  --foreground: #ffffff;
+  --ink: #ffffff;
+  --paper: #000000;
+  --paper-shade: #111111;
+  --neutral: #000000;
+  --border: rgba(255, 255, 255, 0.15);
+
+  /* monochromatic accents (luxury = no colour differentiation) */
+  --primary: #fafafa;
+  --secondary: #fafafa;
+  --accent-1: #fafafa;
+  --accent-2: #fafafa;
+  --accent-3: #fafafa;
+  --accent-yellow: #fafafa;
+
+  /* semantic status colours (kept for functional states only) */
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+
+  /* shadows removed */
+  --shadow: none;
+  --shadow-sm: none;
+  --shadow-lg: none;
+
+  /* border-radius (8pt grid) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
 }
 
 @theme inline {
@@ -22,13 +39,21 @@
   --color-ink: var(--ink);
   --color-paper: var(--paper);
   --color-paper-shade: var(--paper-shade);
+  --color-neutral: var(--neutral);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-accent-1: var(--accent-1);
   --color-accent-2: var(--accent-2);
   --color-accent-3: var(--accent-3);
   --color-accent-yellow: var(--accent-yellow);
-  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-  --font-display: var(--font-archivo-black), system-ui, sans-serif;
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-oswald), system-ui, sans-serif;
+  --font-display: var(--font-oswald), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
 }
 
 html {
@@ -43,15 +68,8 @@ body {
 }
 
 .gradient-text {
-  background-image: linear-gradient(
-    100deg,
-    var(--accent-1) 0%,
-    var(--accent-2) 50%,
-    var(--accent-3) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background-image: none;
+  color: var(--ink);
 }
 
 .brutal-box {
@@ -82,16 +100,11 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -0.12em;
-  height: 0.18em;
-  background-image: linear-gradient(
-    100deg,
-    var(--accent-1) 0%,
-    var(--accent-2) 50%,
-    var(--accent-3) 100%
-  );
-  border-radius: 999px;
-  transform: skewX(-12deg);
+  bottom: -0.08em;
+  height: 0.06em;
+  background: var(--ink);
+  border-radius: 0;
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

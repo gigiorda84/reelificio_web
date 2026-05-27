@@ -1,9 +1,9 @@
 {
   "meta": {
     "siteName": "reelificio",
-    "tagline": "l'agenzia che fa scalare i brand su Instagram",
-    "homeTitle": "reelificio — community che crescono, brand che scalano",
-    "homeDescription": "Costruiamo community su Instagram per i brand. Algoritmi che scoprono i trend, persone che sanno raccontarli. Oltre 100 reel al mese, +1M follower aggiunti nell'ultimo anno."
+    "tagline": "la prima agenzia italiana di contenuti animati virali",
+    "homeTitle": "reelificio — la prima agenzia italiana di contenuti animati virali",
+    "homeDescription": "La prima agenzia italiana specializzata in contenuti animati virali. Personaggi proprietari, voci su misura, crescita 100% organica. Oltre 100 reel al mese, +1M follower nell'ultimo anno."
   },
   "nav": {
     "partnership": "Partnership",
@@ -12,9 +12,9 @@
     "cta": "Prenota una call"
   },
   "hero": {
-    "eyebrow": "100+ reel al mese · 3 community oltre i 100k · +1M follower",
-    "title": "Trasformiamo il tuo brand in una community.",
-    "subtitle": "Con script che convertono, voci che restano e personaggi che la gente vuole rivedere. Una scienza, non un colpo di fortuna.",
+    "eyebrow": "100+ reel al mese · 3 pagine oltre i 100k · +1M follower organici",
+    "title": "La prima agenzia italiana di contenuti animati virali.",
+    "subtitle": "Script che convertono, voci proprietarie, personaggi che la gente aspetta. Cresciamo in puro organico — il contenuto è re, non la sponsorizzazione.",
     "cta": "Prenota una call gratuita",
     "ctaSecondary": "Vedi come lavoriamo",
     "chipLeft": "Follower e ROAS",
@@ -31,7 +31,7 @@
   },
   "twoPaths": {
     "title": "Due modi per lavorare con noi.",
-    "subtitle": "Sponsorizza una community che già esiste o costruisci la tua. In entrambi i casi, mettiamo il nostro studio al servizio del tuo brand.",
+    "subtitle": "Entra nei nostri format già virali oppure costruisci il tuo. In entrambi i casi, mettiamo il nostro studio al servizio del tuo brand.",
     "partnership": {
       "label": "Per i brand",
       "title": "Sponsorizza una community.",
@@ -47,7 +47,7 @@
   },
   "howWeWork": {
     "title": "L'arte e la scienza di creare contenuti video che funzionano.",
-    "subtitle": "Algoritmi per i trend. Persone per il mestiere. Sei fasi che si ripetono ogni mese, su ogni pagina.",
+    "subtitle": "Content is king: le nostre pagine crescono senza sponsorizzazioni, solo in organico — perché l'algoritmo premia i contenuti, non il paid. Sei fasi, ogni mese, su ogni pagina.",
     "steps": {
       "trend": {
         "title": "Scopriamo i trend con l'AI",
@@ -67,7 +67,7 @@
       },
       "distribution": {
         "title": "Pubblichiamo e distribuiamo",
-        "body": "Calendario, copy, hashtag, cross-posting. Niente buchi nel calendario."
+        "body": "Calendario, copy, hashtag, cross-posting. Zero paid: l'algoritmo penalizza le sponsorizzazioni, noi costruiamo reach reale."
       },
       "iterate": {
         "title": "Analizziamo e iteriamo",
@@ -97,7 +97,7 @@
     }
   },
   "caseStudies": {
-    "title": "Community che abbiamo costruito.",
+    "title": "Format virali che abbiamo costruito.",
     "subtitle": "Quattro pagine, quattro tonalità diverse, una sola logica: personaggi che la gente aspetta.",
     "cta": "Guarda su Instagram",
     "ctaWork": "Vedi il lavoro",
@@ -181,7 +181,7 @@
     }
   },
   "footer": {
-    "tagline": "Costruiamo community che scalano.",
+    "tagline": "La prima agenzia italiana di contenuti animati virali.",
     "company": "Sweet Life Faktory · Corso Dante Alighieri 118, 10126 Torino",
     "vat": "P.IVA / CF 11515270012",
     "sdi": "Codice Univoco W7YVJK9",

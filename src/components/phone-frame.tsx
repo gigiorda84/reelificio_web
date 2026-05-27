@@ -29,7 +29,7 @@ export function PhoneFrame({
         className
       )}
     >
-      <div className="absolute inset-0 rounded-[2.5rem] border-[3px] border-ink bg-ink shadow-[12px_12px_0_0_var(--accent-2)]">
+      <div className="absolute inset-0 rounded-[2.5rem] border-[2px] border-ink bg-ink">
         <div className="absolute left-1/2 top-2 z-10 h-4 w-20 -translate-x-1/2 rounded-full bg-ink" />
         <div className="absolute inset-[6px] overflow-hidden rounded-[2.2rem] bg-paper-shade">
           {videoSrc ? (
@@ -54,7 +54,7 @@ export function PhoneFrame({
 
 function PlaceholderReel() {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-paper-shade">
       <div className="font-display text-3xl lowercase text-paper">
         reelificio
       </div>
