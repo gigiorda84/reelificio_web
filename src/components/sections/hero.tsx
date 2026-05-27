@@ -11,10 +11,8 @@ export async function Hero() {
     <section className="relative overflow-hidden border-b-2 border-ink">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:gap-8 md:px-8 md:py-24">
         <div className="flex flex-col">
-          <div className="flex items-baseline gap-3">
-            <span className="text-3xl md:text-4xl">
-              <Wordmark />
-            </span>
+          <div className="flex items-center gap-3">
+            <Wordmark />
             <span className="font-mono text-xs text-ink/70 md:text-sm">
               , {meta('tagline')}
             </span>
