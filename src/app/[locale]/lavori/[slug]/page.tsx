@@ -79,7 +79,7 @@ export default async function LavoriPage({
               <p className="font-mono text-xs uppercase tracking-widest text-ink/60">
                 {handle}
               </p>
-              <h1 className="mt-3 font-display text-[clamp(2rem,5vw,4rem)] leading-[0.95]">
+              <h1 className="mt-3 font-display text-[clamp(2rem,5vw,4rem)] leading-[0.95] uppercase">
                 <span className="gradient-text">{name}</span>
               </h1>
               <p className="mt-6 max-w-lg font-sans text-lg text-ink/80">{pitch}</p>

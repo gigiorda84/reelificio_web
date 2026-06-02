@@ -16,7 +16,7 @@ export async function CaseStudies() {
     <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
-          <h2 className="max-w-3xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight">
+          <h2 className="max-w-3xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight uppercase">
             {t('title')}
           </h2>
         </Reveal>
@@ -42,7 +42,7 @@ export async function CaseStudies() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <h3 className="font-display text-2xl leading-tight">
+                  <h3 className="font-display text-2xl leading-tight uppercase">
                     {t(`items.${key}.name`)}
                   </h3>
                   <span className="mt-1 font-mono text-xs uppercase text-lime/70">

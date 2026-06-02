@@ -12,7 +12,7 @@ export async function Hero() {
         <div className="flex flex-col">
           <Wordmark imageClassName="h-40 md:h-64" />
 
-          <h1 className="mt-10 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[0.9] tracking-tight">
+          <h1 className="mt-10 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[0.9] tracking-tight uppercase">
             {t('title')}
           </h1>
 
@@ -65,8 +65,8 @@ function ChipFloating({
   const color = accent === 'lime' ? 'bg-lime text-[#020103]' : 'bg-pink text-white';
   return (
     <div className={`absolute z-10 ${className ?? ''}`}>
-      <div className={`rounded-full px-4 py-2 ${color}`}>
-        <span className="font-mono text-xs font-medium uppercase tracking-tight">
+      <div className={`rounded-full px-5 py-3 ${color}`}>
+        <span className="font-mono text-sm font-bold uppercase tracking-tight">
           {text}
         </span>
       </div>

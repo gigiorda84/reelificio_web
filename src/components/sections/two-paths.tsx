@@ -9,7 +9,7 @@ export async function TwoPaths() {
     <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
-          <h2 className="max-w-3xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight">
+          <h2 className="max-w-3xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight uppercase">
             {t('title')}
           </h2>
         </Reveal>
@@ -28,7 +28,7 @@ export async function TwoPaths() {
               <span className="font-mono text-xs uppercase tracking-widest text-lime/70">
                 {t('partnership.label')}
               </span>
-              <h3 className="mt-4 font-display text-3xl leading-tight text-ink md:text-4xl">
+              <h3 className="mt-4 font-display text-3xl leading-tight text-ink md:text-4xl uppercase">
                 {t('partnership.title')}
               </h3>
               <p className="mt-4 font-sans text-base text-ink/70">
@@ -48,7 +48,7 @@ export async function TwoPaths() {
               <span className="font-mono text-xs uppercase tracking-widest text-[#020103]/60">
                 {t('produzione.label')}
               </span>
-              <h3 className="mt-4 font-display text-3xl leading-tight text-[#020103] md:text-4xl">
+              <h3 className="mt-4 font-display text-3xl leading-tight text-[#020103] md:text-4xl uppercase">
                 {t('produzione.title')}
               </h3>
               <p className="mt-4 font-sans text-base text-[#020103]/80">

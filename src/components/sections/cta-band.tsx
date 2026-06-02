@@ -11,7 +11,7 @@ export async function CtaBand() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-2 md:gap-16 md:px-8 md:py-28">
         <Reveal>
           <div>
-            <h2 className="font-display text-[clamp(2.4rem,6vw,4.5rem)] leading-none text-[#020103]">
+            <h2 className="font-display text-[clamp(2.4rem,6vw,4.5rem)] leading-none text-[#020103] uppercase">
               {t('title')}
             </h2>
             <p className="mt-6 max-w-md font-sans text-lg text-[#020103]/80">

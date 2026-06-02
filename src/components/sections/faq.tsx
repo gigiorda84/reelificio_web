@@ -13,7 +13,7 @@ export function FAQ() {
   return (
     <section className="bg-paper">
       <div className="mx-auto max-w-4xl px-4 py-20 md:px-8 md:py-28">
-        <h2 className="text-right font-display text-[clamp(3rem,10vw,8rem)] leading-none text-ink">
+        <h2 className="text-right font-display text-[clamp(3rem,10vw,8rem)] leading-none text-ink uppercase">
           {t('title')}
         </h2>
 
@@ -30,7 +30,7 @@ export function FAQ() {
                   onClick={() => setOpen(isOpen ? null : k)}
                   className="flex w-full items-center justify-between gap-6 py-6 text-left transition-colors hover:bg-white/[0.03] focus-visible:bg-white/[0.03] focus:outline-none"
                 >
-                  <span className="font-display text-lg leading-tight md:text-2xl">
+                  <span className="font-display text-lg leading-tight md:text-2xl uppercase">
                     {t(`items.${k}.q`)}
                   </span>
                   <span

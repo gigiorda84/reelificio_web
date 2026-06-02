@@ -34,7 +34,7 @@ export default async function ContattiPage({
     <section className="border-b-2 border-ink">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
-          <h1 className="font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95]">
+          <h1 className="font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95] uppercase">
             <span className="gradient-text">{t('title')}</span>
           </h1>
         </Reveal>

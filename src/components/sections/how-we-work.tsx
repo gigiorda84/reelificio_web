@@ -29,7 +29,7 @@ export async function HowWeWork() {
     >
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
-          <h2 className="max-w-3xl text-center font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight mx-auto">
+          <h2 className="max-w-3xl text-center font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight mx-auto uppercase">
             {t('title')}
           </h2>
         </Reveal>
@@ -54,7 +54,7 @@ export async function HowWeWork() {
                     {icons[key]}
                   </span>
                 </div>
-                <h3 className="mt-4 font-display text-xl leading-snug md:text-2xl">
+                <h3 className="mt-4 font-display text-xl leading-snug md:text-2xl uppercase">
                   {t(`steps.${key}.title`)}
                 </h3>
                 <p className="mt-3 font-sans text-sm text-ink/70">

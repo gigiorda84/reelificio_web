@@ -10,7 +10,7 @@ export async function Pillars() {
     <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <Reveal>
-          <h2 className="max-w-2xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight">
+          <h2 className="max-w-2xl font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-tight uppercase">
             {t('title')}
           </h2>
         </Reveal>
@@ -22,7 +22,7 @@ export async function Pillars() {
                 <span className="font-mono text-xs uppercase tracking-widest text-lime">
                   0{i + 1}
                 </span>
-                <h3 className="mt-3 font-display text-xl leading-tight md:text-2xl">
+                <h3 className="mt-3 font-display text-xl leading-tight md:text-2xl uppercase">
                   {t(`items.${key}.title`)}
                 </h3>
                 <p className="mt-3 font-sans text-sm text-ink/70">

@@ -43,7 +43,7 @@ export default async function PartnershipPage({
             </p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h1 className="mt-4 font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95]">
+            <h1 className="mt-4 font-display text-[clamp(2.4rem,6vw,5rem)] leading-[0.95] uppercase">
               <span className="gradient-text">{t('title')}</span>
             </h1>
           </Reveal>
@@ -66,7 +66,7 @@ export default async function PartnershipPage({
         <div className="mx-auto grid max-w-5xl gap-12 px-4 py-20 md:grid-cols-2 md:gap-16 md:px-8">
           <Reveal>
             <div className="brutal-box p-8">
-              <h2 className="font-display text-2xl">
+              <h2 className="font-display text-2xl uppercase">
                 {t('sections.how.title')}
               </h2>
               <ol className="mt-6 space-y-4">
@@ -83,7 +83,7 @@ export default async function PartnershipPage({
           </Reveal>
           <Reveal delay={0.1}>
             <div className="brutal-box p-8">
-              <h2 className="font-display text-2xl">
+              <h2 className="font-display text-2xl uppercase">
                 {t('sections.deliverables.title')}
               </h2>
               <ul className="mt-6 space-y-4">
