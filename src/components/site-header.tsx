@@ -11,7 +11,7 @@ export async function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-paper-shade/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 md:px-8">
         <Link href="/" className="text-2xl md:text-3xl" aria-label="reelificio">
-          <Wordmark imageClassName="h-[50px]" />
+          <Wordmark imageClassName="h-[62px]" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
