@@ -58,7 +58,7 @@ export async function POST(req: Request) {
       to: TO,
       subject,
       text,
-      replyTo: undefined
+      ...(email ? {replyTo: email} : {})
     });
   } catch (err) {
     console.error('resend send failed', err);
