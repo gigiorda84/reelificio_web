@@ -7,7 +7,8 @@ export async function SocialProof() {
   const metrics = [
     {value: '100+', label: t('metrics.videos')},
     {value: '3', label: t('metrics.communities')},
-    {value: '+1M', label: t('metrics.growth')}
+    {value: '+500k', label: t('metrics.growth')},
+    {value: '+20k', label: t('metrics.followersMonthly')}
   ];
 
   return (
@@ -19,7 +20,7 @@ export async function SocialProof() {
           </p>
         </Reveal>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m, i) => (
             <Reveal key={i} delay={i * 0.08}>
               <div className="flex items-end justify-between gap-4 border border-white/10 p-6">

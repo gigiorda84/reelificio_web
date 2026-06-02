@@ -14,19 +14,20 @@
   "hero": {
     "eyebrow": "100+ reels a month · 3 pages over 100k · +1M organic followers",
     "title": "Italy's first viral animated content agency.",
-    "subtitle": "Scripts that convert, proprietary voices, characters people wait for. We grow purely organic — content is king, not paid sponsorships.",
+    "subtitle": "Scripts that convert, proprietary voices, characters people wait for. We grow purely organic: content is king, not paid sponsorships.",
     "cta": "Book a free call",
     "ctaSecondary": "See how we work",
-    "chipLeft": "Followers & ROAS",
+    "chipLeft": "20M views/month",
     "chipTop": "100 videos a month",
-    "chipRight": "Video production"
+    "chipRight": "+20k followers/month"
   },
   "socialProof": {
     "title": "Brands and communities that share our videos",
     "metrics": {
       "videos": "videos produced every month",
       "communities": "communities over 100k followers",
-      "growth": "followers added in the last year"
+      "growth": "followers added in the last year",
+      "followersMonthly": "organic followers per month"
     }
   },
   "twoPaths": {
@@ -50,8 +51,8 @@
     "subtitle": "Content is king: our pages go viral without sponsorships, purely organic — because the algorithm rewards content, not paid. Six phases, every month, on every page.",
     "steps": {
       "trend": {
-        "title": "We find trends with AI",
-        "body": "We track formats, sounds and hooks while they're still rising — before they go mainstream."
+        "title": "We create iconic pages",
+        "body": "We build original brands that translate across media and formats."
       },
       "script": {
         "title": "We write scripts that convert",

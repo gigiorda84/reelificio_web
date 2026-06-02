@@ -14,19 +14,20 @@
   "hero": {
     "eyebrow": "100+ reel al mese · 3 pagine oltre i 100k · +1M follower organici",
     "title": "La prima agenzia italiana di contenuti animati virali.",
-    "subtitle": "Script che convertono, voci proprietarie, personaggi che la gente aspetta. Cresciamo in puro organico — il contenuto è re, non la sponsorizzazione.",
+    "subtitle": "Script che convertono, voci proprietarie, personaggi che la gente aspetta. Cresciamo in puro organico: il contenuto è re, non la sponsorizzazione.",
     "cta": "Prenota una call gratuita",
     "ctaSecondary": "Vedi come lavoriamo",
-    "chipLeft": "Follower e ROAS",
+    "chipLeft": "20M view al mese",
     "chipTop": "100 video al mese",
-    "chipRight": "Produzione video"
+    "chipRight": "+20k followers al mese"
   },
   "socialProof": {
     "title": "Brand e community che fanno girare i nostri video",
     "metrics": {
       "videos": "video prodotti ogni mese",
       "communities": "community sopra i 100k follower",
-      "growth": "follower aggiunti nell'ultimo anno"
+      "growth": "follower aggiunti nell'ultimo anno",
+      "followersMonthly": "followers organici al mese"
     }
   },
   "twoPaths": {
@@ -50,8 +51,8 @@
     "subtitle": "Content is king: le nostre pagine crescono senza sponsorizzazioni, solo in organico — perché l'algoritmo premia i contenuti, non il paid. Sei fasi, ogni mese, su ogni pagina.",
     "steps": {
       "trend": {
-        "title": "Scopriamo i trend con l'AI",
-        "body": "Tracciamo formati, suoni e hook in crescita prima che diventino mainstream."
+        "title": "Creiamo pagine iconiche",
+        "body": "Lavoriamo per creare Brand originali e convertibili su diversi media e formati."
       },
       "script": {
         "title": "Scriviamo script che convertono",
