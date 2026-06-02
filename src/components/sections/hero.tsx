@@ -8,11 +8,11 @@ export async function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-paper">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-8 pb-16 md:grid-cols-2 md:gap-8 md:px-8 md:pt-12 md:pb-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-4 pb-16 md:grid-cols-2 md:gap-8 md:px-8 md:pt-6 md:pb-28">
         <div className="flex flex-col">
           <Wordmark imageClassName="h-40 md:h-64" />
 
-          <h1 className="mt-10 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[0.9] tracking-tight uppercase">
+          <h1 className="mt-5 font-display text-[clamp(2.6rem,6vw,5rem)] leading-[0.9] tracking-tight uppercase">
             {t('title')}
           </h1>
 
