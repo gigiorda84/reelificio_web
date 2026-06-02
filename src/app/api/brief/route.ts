@@ -24,7 +24,7 @@ export async function POST(req: Request) {
 
   const name = String(form.get('name') ?? '').trim();
   const company = String(form.get('company') ?? '').trim();
-  const handle = String(form.get('handle') ?? '').trim();
+  const email = String(form.get('handle') ?? '').trim();
   const message = String(form.get('message') ?? '').trim();
   // Honeypot: if hidden field is filled, silently drop.
   const honey = String(form.get('website') ?? '').trim();
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   const subject = `Nuovo brief — ${company} (${name})`;
   const text = [
     `Da: ${name} <${company}>`,
-    handle ? `Instagram: ${handle}` : null,
+    email ? `Email: ${email}` : null,
     '',
     message
   ]

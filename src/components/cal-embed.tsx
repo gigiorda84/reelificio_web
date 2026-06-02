@@ -1,33 +1,36 @@
 'use client';
 
-import {useTranslations} from 'next-intl';
+import {useEffect} from 'react';
 import {cn} from '@/lib/cn';
 
-const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? 'reelificio/discovery';
-
 export function CalEmbed({className}: {className?: string}) {
-  const t = useTranslations('ctaBand');
+  useEffect(() => {
+    if (document.getElementById('cal-embed-js')) return;
+
+    const script = document.createElement('script');
+    script.id = 'cal-embed-js';
+    script.src = 'https://app.cal.com/embed/embed.js';
+    script.async = true;
+    script.onload = () => {
+      type CalFn = ((...args: unknown[]) => void) & {ns?: Record<string, (...args: unknown[]) => void>};
+      const w = window as Window & {Cal?: CalFn};
+      if (!w.Cal) return;
+      w.Cal('init', '30min', {origin: 'https://app.cal.com'});
+      w.Cal.ns?.['30min']?.('inline', {
+        elementOrSelector: '#my-cal-inline-30min',
+        config: {layout: 'month_view', useSlotsViewOnSmallScreen: 'true'},
+        calLink: 'reelificio/30min',
+      });
+      w.Cal.ns?.['30min']?.('ui', {hideEventTypeDetails: false, layout: 'month_view'});
+    };
+    document.head.appendChild(script);
+  }, []);
 
   return (
-    <div className={cn('brutal-box overflow-hidden', className)}>
-      <div className="flex items-center justify-between border-b-2 border-ink bg-paper-shade px-4 py-2">
-        <span className="font-mono text-xs uppercase tracking-tight text-ink/70">
-          cal.com / {CAL_LINK.split('/')[0]}
-        </span>
-        <a
-          href={`https://cal.com/${CAL_LINK}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-mono text-xs uppercase tracking-tight hover:text-accent-2"
-        >
-          ↗ {t('calLabel')}
-        </a>
-      </div>
-      <iframe
-        title="Prenota una call su Cal.com"
-        src={`https://cal.com/${CAL_LINK}?embed=true&theme=light`}
-        className="block h-[640px] w-full"
-        loading="lazy"
+    <div className={cn('w-full', className)}>
+      <div
+        id="my-cal-inline-30min"
+        style={{width: '100%', minHeight: '600px', overflow: 'scroll'}}
       />
     </div>
   );

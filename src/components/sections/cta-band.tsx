@@ -34,7 +34,7 @@ export async function CtaBand() {
             <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#020103]/60">
               {t('formLabel')}
             </p>
-            <BriefForm className="[--form-ink:#020103] [--form-paper:#F2F2EF]" />
+            <BriefForm variant="light" />
           </div>
         </Reveal>
       </div>
