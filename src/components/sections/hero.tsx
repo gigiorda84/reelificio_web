@@ -46,7 +46,7 @@ export async function Hero() {
             className="bottom-8 right-0 translate-x-2 md:translate-x-6"
             accent="pink"
           />
-          <PhoneFrame videoSrc="/reels/fluffy.mp4" />
+          <PhoneFrame videoSrc="/reels/fluffy_hero.mp4" />
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@ function ChipFloating({
   return (
     <div className={`absolute z-10 ${className ?? ''}`}>
       <div className={`rounded-full px-5 py-3 ${color}`}>
-        <span className="font-mono text-sm font-bold uppercase tracking-tight">
+        <span className="font-mono text-base font-bold uppercase tracking-tight">
           {text}
         </span>
       </div>
