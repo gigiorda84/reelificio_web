@@ -1,5 +1,4 @@
 import {getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
 import {Reveal} from '@/components/reveal';
 
 const items = [
@@ -41,24 +40,13 @@ export async function CaseStudies() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-6">
+                <div className="flex flex-col p-6">
                   <h3 className="font-display text-2xl leading-tight uppercase">
                     {t(`items.${key}.name`)}
                   </h3>
                   <span className="mt-1 font-mono text-xs uppercase text-lime/70">
                     {t(`items.${key}.handle`)}
                   </span>
-                  <p className="mt-4 font-sans text-sm text-ink/70">
-                    {t(`items.${key}.pitch`)}
-                  </p>
-                  <div className="mt-6">
-                    <Link
-                      href={`/lavori/${slug}`}
-                      className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-tight text-ink/60 transition-colors hover:text-lime"
-                    >
-                      {t('ctaWork')} <span aria-hidden>→</span>
-                    </Link>
-                  </div>
                 </div>
               </article>
             </Reveal>
