@@ -20,10 +20,10 @@ export async function TwoPaths() {
         </Reveal>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <Reveal delay={0.15}>
+          <Reveal delay={0.15} direction="left">
             <Link
               href="/partnership"
-              className="group flex h-full flex-col bg-paper-shade p-8 transition-opacity hover:opacity-90 md:p-10"
+              className="group flex h-full flex-col bg-paper-shade p-8 transition-transform duration-300 hover:-translate-y-1 md:p-10"
             >
               <span className="font-mono text-xs uppercase tracking-widest text-lime/70">
                 {t('partnership.label')}
@@ -40,10 +40,10 @@ export async function TwoPaths() {
             </Link>
           </Reveal>
 
-          <Reveal delay={0.25}>
+          <Reveal delay={0.25} direction="right">
             <Link
               href="/produzione"
-              className="group flex h-full flex-col bg-lime p-8 transition-opacity hover:opacity-90 md:p-10"
+              className="group flex h-full flex-col bg-lime p-8 transition-transform duration-300 hover:-translate-y-1 md:p-10"
             >
               <span className="font-mono text-xs uppercase tracking-widest text-[#020103]/60">
                 {t('produzione.label')}

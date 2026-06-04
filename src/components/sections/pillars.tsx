@@ -17,8 +17,8 @@ export async function Pillars() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {items.map((key, i) => (
-            <Reveal key={key} delay={i * 0.06}>
-              <div className="flex h-full flex-col border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-lime/30">
+            <Reveal key={key} delay={i * 0.07} direction="scale">
+              <div className="flex h-full flex-col border border-white/10 bg-white/[0.03] p-6 transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-lime/30">
                 <span className="font-mono text-xs uppercase tracking-widest text-lime">
                   0{i + 1}
                 </span>

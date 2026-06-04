@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Reveal} from '@/components/reveal';
+import {CountUp} from '@/components/count-up';
 
 export async function SocialProof() {
   const t = await getTranslations('socialProof');
@@ -22,10 +23,10 @@ export async function SocialProof() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m, i) => (
-            <Reveal key={i} delay={i * 0.08}>
-              <div className="flex items-end justify-between gap-4 border border-white/10 p-6">
+            <Reveal key={i} delay={i * 0.08} direction="scale">
+              <div className="flex items-end justify-between gap-4 border border-white/10 p-6 transition-[transform,border-color] duration-300 hover:scale-[1.03] hover:border-lime/40">
                 <div className="font-display text-5xl leading-none text-lime md:text-6xl">
-                  {m.value}
+                  <CountUp value={m.value} />
                 </div>
                 <div className="max-w-[60%] text-right font-mono text-xs uppercase leading-tight text-ink/60">
                   {m.label}

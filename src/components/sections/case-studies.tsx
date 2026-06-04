@@ -26,9 +26,9 @@ export async function CaseStudies() {
         </Reveal>
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
-          {items.map(({key, slug, videoSrc}, i) => (
-            <Reveal key={key} delay={0.1 + i * 0.06}>
-              <article className="group flex h-full flex-col overflow-hidden border border-white/10 bg-white/[0.03] transition-colors hover:border-lime/30">
+          {items.map(({key, videoSrc}, i) => (
+            <Reveal key={key} delay={0.1 + i * 0.08} direction="scale">
+              <article className="group overflow-hidden border border-white/10 bg-white/[0.03] transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-lime/30">
                 <div className="aspect-[9/14] w-full overflow-hidden bg-paper-shade">
                   <video
                     src={videoSrc}
@@ -37,7 +37,7 @@ export async function CaseStudies() {
                     loop
                     playsInline
                     preload="metadata"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="flex flex-col p-6">

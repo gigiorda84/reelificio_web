@@ -35,16 +35,19 @@ export async function Hero() {
             text={t('chipTop')}
             className="-top-2 right-2 md:-top-4 md:right-6"
             accent="lime"
+            animDelay="0s"
           />
           <ChipFloating
             text={t('chipLeft')}
             className="left-0 top-1/3 -translate-x-2 md:-translate-x-6"
             accent="pink"
+            animDelay="1.3s"
           />
           <ChipFloating
             text={t('chipRight')}
             className="bottom-8 right-0 translate-x-2 md:translate-x-6"
             accent="pink"
+            animDelay="0.7s"
           />
           <PhoneFrame videoSrc="/reels/fluffy_hero.mp4" />
         </div>
@@ -56,16 +59,21 @@ export async function Hero() {
 function ChipFloating({
   text,
   className,
-  accent = 'lime'
+  accent = 'lime',
+  animDelay = '0s'
 }: {
   text: string;
   className?: string;
   accent?: 'lime' | 'pink';
+  animDelay?: string;
 }) {
   const color = accent === 'lime' ? 'bg-lime text-[#020103]' : 'bg-pink text-white';
   return (
     <div className={`absolute z-10 ${className ?? ''}`}>
-      <div className={`rounded-full px-5 py-3 ${color}`}>
+      <div
+        className={`rounded-full px-5 py-3 ${color} animate-float`}
+        style={{animationDelay: animDelay}}
+      >
         <span className="font-mono text-base font-bold uppercase tracking-tight">
           {text}
         </span>

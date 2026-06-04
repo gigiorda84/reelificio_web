@@ -41,14 +41,14 @@ export async function HowWeWork() {
 
         <ol className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {stepKeys.map((key, i) => (
-            <Reveal key={key} delay={0.05 * i}>
-              <li className="flex h-full flex-col border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-pink/30">
+            <Reveal key={key} delay={0.05 * i} direction="scale">
+              <li className="group flex h-full flex-col border border-white/10 bg-white/[0.04] p-6 transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-pink/30">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs uppercase tracking-widest text-lime">
                     fase {String(i + 1).padStart(2, '0')}
                   </span>
                   <span
-                    className="flex h-10 w-10 items-center justify-center border border-white/20 bg-white/5 font-display text-xl text-pink"
+                    className="flex h-10 w-10 items-center justify-center border border-white/20 bg-white/5 font-display text-xl text-pink transition-transform duration-300 group-hover:rotate-12"
                     aria-hidden
                   >
                     {icons[key]}
