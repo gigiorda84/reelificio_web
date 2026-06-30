@@ -6,5 +6,6 @@ export const proxy = createMiddleware(routing);
 export const config = {
   // Match all pathnames except for:
   // - API routes, Next internals, static files (anything with a dot)
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  // - Explicitly unindexed standalone pages served from public/
+  matcher: ['/((?!api|_next|_vercel|fluffy-box|fungo\\.html|.*\\..*).*)']
 };
