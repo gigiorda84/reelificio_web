@@ -8,7 +8,14 @@ export async function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-paper">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-4 pb-16 md:grid-cols-2 md:gap-8 md:px-8 md:pt-6 md:pb-28">
+      <div className="cloud-bg" aria-hidden="true">
+        <div className="cloud-shape cloud-1" />
+        <div className="cloud-shape cloud-2" />
+        <div className="cloud-shape cloud-3" />
+        <div className="cloud-shape cloud-4" />
+        <div className="cloud-shape cloud-5" />
+      </div>
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-4 pt-4 pb-16 md:grid-cols-2 md:gap-8 md:px-8 md:pt-6 md:pb-28">
         <div className="flex flex-col">
           <Wordmark imageClassName="h-44 md:h-[282px]" className="self-center" />
 

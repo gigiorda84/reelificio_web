@@ -7,5 +7,5 @@ export const config = {
   // Match all pathnames except for:
   // - API routes, Next internals, static files (anything with a dot)
   // - Explicitly unindexed standalone pages served from public/
-  matcher: ['/((?!api|_next|_vercel|fluffy-box|fungo\\.html|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|fungo\\.html|.*\\..*).*)']
 };

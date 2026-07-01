@@ -15,7 +15,7 @@ declare global {
   }
 }
 
-const CAL_LINK = 'reelificio/30min';
+const CAL_LINK = 'giuliavittori/30min';
 const SELECTOR = '#my-cal-inline-30min';
 
 function setupInline() {

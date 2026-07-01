@@ -113,10 +113,57 @@ body {
   50%       { transform: translateY(-7px); }
 }
 
+@keyframes drift {
+  0%, 100% { transform: translateX(-20px); }
+  50%       { transform: translateX(20px);  }
+}
+@keyframes drift-lg {
+  0%, 100% { transform: scale(1.5) translateX(-14px); }
+  50%       { transform: scale(1.5) translateX(14px);  }
+}
+@keyframes drift-sm {
+  0%, 100% { transform: scale(0.72) translateX(-28px); }
+  50%       { transform: scale(0.72) translateX(28px);  }
+}
+
 @theme inline {
   --animate-float: float 4s ease-in-out infinite;
   --animate-float-alt: float-alt 3.2s ease-in-out infinite;
 }
+
+/* ── Cloud background ─────────────────────────────────────── */
+.cloud-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cloud-shape {
+  position: absolute;
+  background: rgba(47, 6, 86, 0.55);
+  border-radius: 100px;
+  width: 150px;
+  height: 52px;
+  animation: drift 24s ease-in-out infinite;
+}
+
+.cloud-shape::before,
+.cloud-shape::after {
+  content: "";
+  position: absolute;
+  background: rgba(47, 6, 86, 0.55);
+  border-radius: 50%;
+}
+.cloud-shape::before { width: 66px; height: 66px; top: -30px; left: 22px; }
+.cloud-shape::after  { width: 46px; height: 46px; top: -20px; left: 76px; }
+
+.cloud-1 { top: 6%;     left: 5%;   opacity: .85; animation: drift-lg 22s ease-in-out infinite; }
+.cloud-2 { top: 19%;    right: 8%;  opacity: .55; animation: drift-sm 29s ease-in-out infinite reverse; }
+.cloud-3 { bottom: 18%; left: 12%;  opacity: .70; animation: drift 26s ease-in-out infinite; animation-delay: 4s; }
+.cloud-4 { top: 48%;    right: 20%; opacity: .40; animation: drift-sm 34s ease-in-out infinite reverse; animation-delay: 8s; }
+.cloud-5 { bottom: 6%;  right: 4%;  opacity: .35; animation: drift-lg 38s ease-in-out infinite; animation-delay: 2s; }
 
 @media (prefers-reduced-motion: reduce) {
   *,
