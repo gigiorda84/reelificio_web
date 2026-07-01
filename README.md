@@ -69,3 +69,4 @@ prose in `src/app/[locale]/{privacy,cookie-policy,note-legali}/page.tsx`.
 you have the reel MP4s, drop them in `public/reels/` and pass the path as the
 `videoSrc` prop (see `src/components/sections/hero.tsx` and
 `src/components/sections/case-studies.tsx`).
+# Test commit da Claude - Wed Jul  1 10:34:19 UTC 2026
