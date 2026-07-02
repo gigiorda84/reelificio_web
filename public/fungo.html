@@ -64,7 +64,7 @@
   .hype .cloud,.community .cloud{opacity:.1}
   @keyframes drift{0%{transform:translateX(-20px)}50%{transform:translateX(20px)}100%{transform:translateX(-20px)}}
 
-  .hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:1fr 1fr;align-items:center;text-align:left;gap:24px}
+  .hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;text-align:left;gap:24px}
   .badge{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-family:'Archivo Black';font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;padding:8px 16px;border-radius:999px;margin-bottom:22px}
   .badge .dot{width:10px;height:10px;border-radius:50%;background:var(--lime);animation:pulse 1.3s infinite}
   @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.6}}
