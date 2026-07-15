@@ -539,11 +539,24 @@
     });
   },{threshold:.4}).observe(counter);
   const btn=document.getElementById('subscribe'), email=document.getElementById('email'), confirm=document.getElementById('confirm');
-  btn.addEventListener('click',()=>{
+  btn.addEventListener('click',async()=>{
     const v=email.value.trim(), ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
     if(!ok){ email.style.borderColor='#e04e6b'; email.value=''; email.placeholder='Inserisci una email valida'; return; }
-    email.style.borderColor='var(--ink)'; email.value=''; email.placeholder='La tua email';
-    confirm.classList.add('show');
+    btn.disabled=true;
+    try{
+      const res=await fetch('/api/fungo-subscribe',{
+        method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify({email:v})
+      });
+      if(!res.ok) throw new Error('subscribe failed');
+      email.style.borderColor='var(--ink)'; email.value=''; email.placeholder='La tua email';
+      confirm.classList.add('show');
+    }catch(e){
+      email.style.borderColor='#e04e6b'; email.placeholder='Qualcosa è andato storto, riprova';
+    }finally{
+      btn.disabled=false;
+    }
   });
   email.addEventListener('keydown',e=>{ if(e.key==='Enter') btn.click(); });
 </script>
