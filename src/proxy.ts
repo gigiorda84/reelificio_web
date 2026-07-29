@@ -15,7 +15,10 @@ export function proxy(request: NextRequest) {
 
   if (FUNGO_HOSTS.has(host)) {
     const url = request.nextUrl.clone();
-    url.pathname = '/fungo.html';
+    url.pathname =
+      request.nextUrl.pathname === '/privacy'
+        ? '/fungo-privacy.html'
+        : '/fungo.html';
     return NextResponse.rewrite(url);
   }
 
